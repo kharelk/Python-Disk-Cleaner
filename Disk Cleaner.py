@@ -19,9 +19,9 @@ totalSpace = totalSpace // (2**30)
 usedSpace = usedSpace // (2**30)
 freeSpace = freeSpace // (2**30)
 
-print("Total: %d GiB" % totalSpace)
-print("Used: %d GiB" % usedSpace)
-print("Free: %d GiB" % freeSpace)
+print("Total:",totalSpace,"GiB")
+print("Used:",usedSpace,"GiB")
+print("Free:",freeSpace,"GiB")
 
 #CLEAN
 if (usedSpace >= totalSpace * 0.85): # Check disk usage more then 50%
