@@ -8,4 +8,4 @@ Work on Windows os.
 
 Config file needs to contain:
 Section name in my case it: [Paths]
-And Key name in my case: "TempPath".
+and Key name in my case: "TempPath".
