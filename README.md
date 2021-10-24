@@ -2,10 +2,16 @@
 
 Python script that clean a certain folder given from a config file that located at the same directory after 85% usage of Disk.
 
+The user need to specify the scheduler time to run (in hours)
+
+Work only on Windows os.
+
 The script needs to run from cmd as administrator.
 
-Work on Windows os.
-
 Config file needs to contain:
-Section name in my case it: [Paths]
+Section name in my case: [Paths].
 and Key name in my case: "TempPath".
+
+example for config file:
+[Paths]
+TempPath = C:\Windows\TempTest
