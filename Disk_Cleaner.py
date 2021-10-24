@@ -23,7 +23,7 @@ except OSError:
 #CLEAN
 @scheduler.scheduled_job('interval', hours = hoursToRun)
 def timed_job():
-    print("'This job is run every",hoursToRun,"hours.")
+    print("This job is run every",hoursToRun,"hours.")
     totalSpace, usedSpace, freeSpace = shutil.disk_usage("/") 
     totalSpace = totalSpace // (2**30)
     usedSpace = usedSpace // (2**30)
