@@ -32,8 +32,8 @@ def timed_job():
     print("Used:",usedSpace,"GiB")
     print("Free:",freeSpace,"GiB")
 
-    if (usedSpace >= totalSpace * 0.50): # Check disk usage more then 50%
-        print("disk has more then 50% usage, 50% = ",totalSpace * 0.50,"GiB")
+    if (usedSpace >= totalSpace * 0.85): # Check disk usage more then 85%
+        print("disk has more then 85% usage, 85% = ",totalSpace * 0.85,"GiB")
         if len(os.listdir(TempDir)) == 0:
             print("Directory is empty")
         else:    
@@ -46,7 +46,7 @@ def timed_job():
                     os.remove(path) # Delete File
                     print(path, " File has been deleted")
     else: # No need to delete fies
-        print("disk has less then 50% usage")
+        print("disk has less then 85% usage")
 
 
 
